@@ -48,12 +48,42 @@ conda activate bioinfo
 BASHRC
 fi
 
-# ── 2. Ambiente principal: bioinfo ────────────────────────────────────────
-log "Criando ambiente 'bioinfo' (pode levar 15–20 min)..."
+# ── 2. Ambiente principal: bioinfo (instalação em blocos) ─────────────────
 if conda env list | grep -q "^bioinfo "; then
-    warn "Ambiente 'bioinfo' já existe — pulando"
+    warn "Ambiente 'bioinfo' já existe — pulando criação"
 else
-    mamba env create -f .devcontainer/environment.yml -y
+    log "Bloco 1/6: core (python, samtools, bcftools, seqkit, fastqc, trimmomatic)..."
+    mamba create -n bioinfo python=3.11 "samtools>=1.20" bcftools seqkit fastqc trimmomatic \
+        -c conda-forge -c bioconda -y
+    ok "Bloco 1 concluído"
+
+    log "Bloco 2/6: montagem e QC (spades, multiqc, entrez-direct, sra-tools)..."
+    mamba install -n bioinfo spades multiqc entrez-direct sra-tools \
+        -c conda-forge -c bioconda -y
+    ok "Bloco 2 concluído"
+
+    log "Bloco 3/6: mapeamento (minimap2, bwa-mem2, bowtie2, busco)..."
+    mamba install -n bioinfo minimap2 bwa-mem2 bowtie2 busco \
+        -c conda-forge -c bioconda -y
+    # Garante samtools moderno após bloco 3 (bwa-mem2 pode causar downgrade)
+    mamba install -n bioinfo "samtools>=1.20" -c conda-forge -c bioconda --freeze-installed -y 2>/dev/null \
+        || warn "samtools: verifique versão com 'samtools --version'"
+    ok "Bloco 3 concluído"
+
+    log "Bloco 4/6: populações (stacks, vcftools)..."
+    mamba install -n bioinfo stacks vcftools \
+        -c conda-forge -c bioconda -y
+    ok "Bloco 4 concluído"
+
+    log "Bloco 5/6: R (base, tidyverse, ggplot2, vegan, adegenet, ape)..."
+    mamba install -n bioinfo "r-base>=4.3,<4.5" r-tidyverse r-ggplot2 r-vegan r-adegenet r-ape \
+        -c conda-forge -y
+    ok "Bloco 5 concluído"
+
+    log "Bloco 6/6: utilitários + quast via pip..."
+    mamba install -n bioinfo wget curl tree -c conda-forge -y
+    conda run -n bioinfo pip install quast --quiet
+    ok "Bloco 6 concluído"
 fi
 ok "Ambiente 'bioinfo' pronto"
 
@@ -71,7 +101,6 @@ log "Instalando InSilicoSeq..."
 conda run -n bioinfo pip install InSilicoSeq --quiet && ok "InSilicoSeq instalado"
 
 # ── 5. QIIME2 (Módulo 4 — opcional, ~3 GB) ────────────────────────────────
-# Descomentado automaticamente se quiser instalar no setup.
 # Para instalar manualmente: bash .devcontainer/instalar_qiime2.sh
 #
 # QIIME2_URL="https://data.qiime2.org/distro/amplicon/qiime2-amplicon-2024.10-py310-linux-conda.yml"
