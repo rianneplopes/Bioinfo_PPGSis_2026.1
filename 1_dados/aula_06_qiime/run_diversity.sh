@@ -13,11 +13,11 @@
 # -----------------------------------------------------------------------------
 
 qiime phylogeny align-to-tree-mafft-fasttree \
-  --i-sequences       rep-seqs.qza \
-  --o-alignment       aligned-rep-seqs.qza \
-  --o-masked-alignment masked-aligned-rep-seqs.qza \
-  --o-tree            unrooted-tree.qza \
-  --o-rooted-tree     rooted-tree.qza \
+  --i-sequences       4_qza/rep-seqs.qza \
+  --o-alignment       4_qza/aligned-rep-seqs.qza \
+  --o-masked-alignment 4_qza/masked-aligned-rep-seqs.qza \
+  --o-tree            4_qza/unrooted-tree.qza \
+  --o-rooted-tree     4_qza/rooted-tree.qza \
   --p-n-threads       2
 # --i-sequences        : sequências representativas das ASVs
 # --o-alignment        : alinhamento múltiplo com MAFFT
@@ -34,8 +34,8 @@ qiime phylogeny align-to-tree-mafft-fasttree \
 # -----------------------------------------------------------------------------
 
 qiime diversity core-metrics-phylogenetic \
-  --i-phylogeny       rooted-tree.qza \
-  --i-table           table.qza \
+  --i-phylogeny       4_qza/rooted-tree.qza \
+  --i-table           4_qza/table.qza \
   --p-sampling-depth  100 \
   --m-metadata-file   sample-metadata.tsv \
   --output-dir        core-metrics-results

@@ -17,16 +17,16 @@
 # mas garantir sempre: trunc-f + trunc-r > tamanho_amplicon + 20
 
 qiime dada2 denoise-paired \
-  --i-demultiplexed-seqs  demux-trimmed.qza \
+  --i-demultiplexed-seqs  4_qza/demux-trimmed.qza \
   --p-trim-left-f         0 \
   --p-trim-left-r         0 \
   --p-trunc-len-f         150 \
-  --p-trunc-len-r         140 \
+  --p-trunc-len-r         120 \
   --p-chimera-method      consensus \
   --p-n-threads           2 \
-  --o-table               table.qza \
-  --o-representative-sequences rep-seqs.qza \
-  --o-denoising-stats     denoising-stats.qza
+  --o-table               4_qza/table.qza \
+  --o-representative-sequences 4_qza/rep-seqs.qza \
+  --o-denoising-stats     4_qza/denoising-stats.qza
 # --i-demultiplexed-seqs  : reads sem primers (saída do Cutadapt)
 # --p-trim-left-f         : bases a remover do início do R1 (0 = não remover)
 # --p-trim-left-r         : bases a remover do início do R2 (0 = não remover)
