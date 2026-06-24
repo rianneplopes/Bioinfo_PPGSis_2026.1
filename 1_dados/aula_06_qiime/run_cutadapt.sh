@@ -11,11 +11,11 @@
 # Letras IUPAC: M=A/C  H=A/C/T  V=A/C/G  W=A/T  Y=C/T  N=qualquer base
 
 qiime cutadapt trim-paired \
-  --i-demultiplexed-sequences demux.qza \
+  --i-demultiplexed-sequences 4_qza/demux.qza \
   --p-front-f GTGCCAGCMGCCGCGGTAA \
   --p-front-r GGACTACHVGGGTWTCTAAT \
   --p-cores 2 \
-  --o-trimmed-sequences demux-trimmed.qza \
+  --o-trimmed-sequences 4_qza/demux-trimmed.qza \
   --verbose
 # --i-demultiplexed-sequences : reads já separadas por amostra (pós-demux)
 # --p-front-f                 : sequência do primer forward a remover no R1
