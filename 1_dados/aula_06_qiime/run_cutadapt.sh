@@ -26,4 +26,4 @@ qiime cutadapt trim-paired \
 # --o-trimmed-sequences       : reads sem primers (artefato de saída)
 # --verbose                   : mostrar estatísticas de remoção por amostra
 
-echo "Cutadapt concluído — artefato gerado: demux-trimmed.qza"
+echo "Cutadapt concluído — artefato gerado: 4_qza/demux-trimmed.qza"

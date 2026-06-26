@@ -8,9 +8,12 @@ qiime demux emp-paired \
   --o-per-sample-sequences ./4_qza/demux-full.qza \
   --o-error-correction-details ./4_qza/demux-details.qza
 # --i-seqs                      : artefato com as reads multiplexadas
+# --i-seqs                      : artefato com as reads mult iplexadas
+>>>>>>> upstream/main
 # --m-barcodes-file             : arquivo de metadados com os barcodes por amostra
 # --m-barcodes-column           : coluna do TSV que contém as sequências de barcode
 # --p-rev-comp-mapping-barcodes : os barcodes no arquivo estão no complemento reverso
 #                                 em relação ao arquivo de metadados (padrão EMP)
 # --o-per-sample-sequences      : reads separadas por amostra (artefato principal)
 # --o-error-correction-details  : estatísticas de correção de erro de barcode
+<<<<<<<

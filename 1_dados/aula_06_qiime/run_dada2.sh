@@ -44,6 +44,6 @@ qiime dada2 denoise-paired \
 
 echo "DADA2 concluído."
 echo "Artefatos gerados:"
-echo "  table.qza            — tabela ASV × amostra"
-echo "  rep-seqs.qza         — sequências representativas das ASVs"
-echo "  denoising-stats.qza  — estatísticas de filtragem e remoção de quimeras"
+echo "  4_qza/table.qza            — tabela ASV × amostra"
+echo "  4_qza/rep-seqs.qza         — sequências representativas das ASVs"
+echo "  4_qza/denoising-stats.qza  — estatísticas de filtragem e remoção de quimeras"

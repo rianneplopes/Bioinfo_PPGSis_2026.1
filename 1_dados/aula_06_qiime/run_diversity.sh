@@ -26,6 +26,13 @@ qiime phylogeny align-to-tree-mafft-fasttree \
 # --o-rooted-tree      : árvore enraizada pelo ponto médio (necessária para UniFrac)
 # --p-n-threads        : núcleos paralelos para o MAFFT
 
+qiime diversity alpha-rarefaction \
+  --i-table 4_qza/table.qza \
+  --i-phylogeny 4_qza/rooted-tree.qza \
+  --p-max-depth 500 \
+  --m-metadata-file sample-metadata.tsv \
+  --o-visualization 5_qzv/alpha-rarefaction.qzv
+  
 # -----------------------------------------------------------------------------
 # PARTE 2 — Core metrics (alfa + beta diversidade)
 # Rarefação: padronizar todas as amostras para o mesmo número de reads
@@ -38,11 +45,11 @@ qiime diversity core-metrics-phylogenetic \
   --i-table           4_qza/table.qza \
   --p-sampling-depth  100 \
   --m-metadata-file   sample-metadata.tsv \
-  --output-dir        core-metrics-results
+  --output-dir        4_qza/core-metrics-results
 # --i-phylogeny       : árvore enraizada (para métricas filogenéticas)
 # --i-table           : tabela ASV × amostra
 # --p-sampling-depth  : profundidade de rarefação (amostras com menos reads
-#                       são descartadas; ajustar após ver table.qzv)
+#                       são descartadas; ajustar após ver .qzv)
 # --m-metadata-file   : metadados para colorir amostras nas visualizações
 # --output-dir        : diretório com todos os artefatos de diversidade
 #
@@ -57,18 +64,18 @@ qiime diversity core-metrics-phylogenetic \
 
 # Faith's Phylogenetic Diversity por transecto
 qiime diversity alpha-group-significance \
-  --i-alpha-diversity core-metrics-results/faith_pd_vector.qza \
+  --i-alpha-diversity 4_qza/core-metrics-results/faith_pd_vector.qza \
   --m-metadata-file   sample-metadata.tsv \
-  --o-visualization   core-metrics-results/faith-pd-significance.qzv
+  --o-visualization   4_qza/core-metrics-results/faith-pd-significance.qzv
 # --i-alpha-diversity : vetor de diversidade alfa por amostra
 # --m-metadata-file   : metadados com as variáveis categóricas para teste
 # --o-visualization   : boxplots + teste Kruskal-Wallis por variável categórica
 
 # Equitabilidade de Pielou por transecto
 qiime diversity alpha-group-significance \
-  --i-alpha-diversity core-metrics-results/evenness_vector.qza \
+  --i-alpha-diversity 4_qza/core-metrics-results/evenness_vector.qza \
   --m-metadata-file   sample-metadata.tsv \
-  --o-visualization   core-metrics-results/evenness-significance.qzv
+  --o-visualization   4_qza/core-metrics-results/evenness-significance.qzv
 
 # -----------------------------------------------------------------------------
 # PARTE 4 — Testes estatísticos de diversidade beta
@@ -76,11 +83,11 @@ qiime diversity alpha-group-significance \
 
 # UniFrac não-ponderado: diferença de composição entre transectos
 qiime diversity beta-group-significance \
-  --i-distance-matrix core-metrics-results/unweighted_unifrac_distance_matrix.qza \
+  --i-distance-matrix 4_qza/core-metrics-results/unweighted_unifrac_distance_matrix.qza \
   --m-metadata-file   sample-metadata.tsv \
   --m-metadata-column transect-name \
   --p-pairwise \
-  --o-visualization   core-metrics-results/unweighted-unifrac-significance.qzv
+  --o-visualization   4_qza/core-metrics-results/unweighted-unifrac-significance.qzv
 # --i-distance-matrix  : matriz de distâncias beta entre amostras
 # --m-metadata-column  : coluna categórica para agrupar amostras no teste
 # --p-pairwise         : realizar testes pareados entre todos os grupos
@@ -88,11 +95,11 @@ qiime diversity beta-group-significance \
 
 # Bray-Curtis: diferença de abundância entre transectos
 qiime diversity beta-group-significance \
-  --i-distance-matrix core-metrics-results/bray_curtis_distance_matrix.qza \
+  --i-distance-matrix 4_qza/core-metrics-results/bray_curtis_distance_matrix.qza \
   --m-metadata-file   sample-metadata.tsv \
   --m-metadata-column transect-name \
   --p-pairwise \
-  --o-visualization   core-metrics-results/bray-curtis-significance.qzv
+  --o-visualization   4_qza/core-metrics-results/bray-curtis-significance.qzv
 
 # -----------------------------------------------------------------------------
 # Listar todos os arquivos de visualização gerados
@@ -100,4 +107,4 @@ qiime diversity beta-group-significance \
 
 echo ""
 echo "Arquivos .qzv gerados — abrir em view.qiime2.org:"
-ls -lh core-metrics-results/*.qzv
+ls -lh 4_qza/core-metrics-results/*.qzv
