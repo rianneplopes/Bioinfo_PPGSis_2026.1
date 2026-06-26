@@ -1,4 +1,0 @@
-demux-details.qza
-demux-full.qza
-demux.qza
-seqs.qza

@@ -1,0 +1,9 @@
+Processing single-end data.
+Using Phred+33 encoding for quality scores.
+Found 1 input file(s).
+Searching for single-end, inlined barcodes.
+Loaded 16 barcodes (4bp).
+Will attempt to recover barcodes with at most 1 mismatches.
+Processing file 1 of 1
+Error opening input file '1_seqs/SRR034310.fastq'
+Error: a failure occurred while attempting to read the first input sequence (was the correct input type specified?).

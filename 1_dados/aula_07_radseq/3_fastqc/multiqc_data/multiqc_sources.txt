@@ -1,0 +1,3 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	Bear_Paw_6	/workspaces/Bioinfo_PPGSis_2026.1/1_dados/aula_07_radseq/3_fastqc/Bear_Paw_6_fastqc.zip
+FastQC	all_sections	Rabbit_Slough_5	/workspaces/Bioinfo_PPGSis_2026.1/1_dados/aula_07_radseq/3_fastqc/Rabbit_Slough_5_fastqc.zip

@@ -1,0 +1,23 @@
+Processing single-end data.
+Using Phred+33 encoding for quality scores.
+Found 1 input file(s).
+Searching for single-end, inlined barcodes.
+Loaded 16 barcodes (4bp).
+Will attempt to recover barcodes with at most 1 mismatches.
+Processing file 1 of 1
+  Processing RAD-Tags...1M...2M...3M...4M...5M...6M...7M...8M...
+  8895289 total reads; -95950 ambiguous barcodes; -97629 ambiguous RAD-Tags; +631371 recovered; -901826 low quality reads; 7799884 retained reads.
+Closing files, flushing buffers...done.
+
+8895289 total sequences
+  95950 barcode not found drops (1.1%)
+ 901826 low quality read drops (10.1%)
+      0 poly-G run drops (0.0%)
+  97629 RAD cutsite not found drops (1.1%)
+7799884 retained reads (87.7%)
+
+Details logged: '2_demux/process_radtags.log'
+For a summary, execute one or more:
+  stacks-dist-extract 2_demux/process_radtags.log total_raw_read_counts
+  stacks-dist-extract --pretty 2_demux/process_radtags.log per_barcode_raw_read_counts
+process_radtags is done.

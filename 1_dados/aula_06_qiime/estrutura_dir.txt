@@ -1,0 +1,73 @@
+.
+├── 1_seqs
+│   ├── barcodes.fastq.gz
+│   ├── forward.fastq.gz
+│   └── reverse.fastq.gz
+├── 2_demux
+├── 3_ref_silva
+│   └── silva-138-99-nb-classifier.qza
+├── 4_qza
+│   ├── aligned-rep-seqs.qza
+│   ├── core-metrics-results
+│   │   ├── bray_curtis_emperor.qzv
+│   │   ├── evenness-significance.qzv
+│   │   ├── faith-pd-significance.qzv
+│   │   ├── jaccard_emperor.qzv
+│   │   ├── unweighted_unifrac_emperor.qzv
+│   │   ├── unweighted-unifrac-significance.qzv
+│   │   └── weighted_unifrac_emperor.qzv
+│   ├── demux-details.qza
+│   ├── demux-full.qza
+│   ├── demux.qza
+│   ├── demux-trimmed.qza
+│   ├── denoising-stats.qza
+│   ├── masked-aligned-rep-seqs.qza
+│   ├── rep-seqs.qza
+│   ├── rooted-tree.qza
+│   ├── seqs.qza
+│   ├── table.qza
+│   ├── taxonomy.qza
+│   └── unrooted-tree.qza
+├── 5_qzv
+│   ├── alpha-rarefaction.qzv
+│   ├── demux.qzv
+│   ├── demux-trimmed.qzv
+│   ├── denoising-stats.qzv
+│   ├── rep-seqs.qzv
+│   ├── table.qzv
+│   ├── taxa-barplot.qzv
+│   ├── taxa-bar-plots.qzv
+│   ├── taxonomy.gzv.qzv
+│   └── taxonomy.qzv
+├── core-metrics-results
+│   ├── bray_curtis_distance_matrix.qza
+│   ├── bray_curtis_emperor.qzv
+│   ├── bray_curtis_pcoa_results.qza
+│   ├── bray-curtis-significance.qzv
+│   ├── evenness-significance.qzv
+│   ├── evenness_vector.qza
+│   ├── faith-pd-significance.qzv
+│   ├── faith_pd_vector.qza
+│   ├── jaccard_distance_matrix.qza
+│   ├── jaccard_emperor.qzv
+│   ├── jaccard_pcoa_results.qza
+│   ├── observed_features_vector.qza
+│   ├── rarefied_table.qza
+│   ├── shannon_vector.qza
+│   ├── unweighted_unifrac_distance_matrix.qza
+│   ├── unweighted_unifrac_emperor.qzv
+│   ├── unweighted_unifrac_pcoa_results.qza
+│   ├── unweighted-unifrac-significance.qzv
+│   ├── weighted_unifrac_distance_matrix.qza
+│   ├── weighted_unifrac_emperor.qzv
+│   └── weighted_unifrac_pcoa_results.qza
+├── demux.sh
+├── denoising-stats.qzv
+├── download.sh
+├── estrutura_dir.txt
+├── run_cutadapt.sh
+├── run_dada2.sh
+├── run_diversity.sh
+└── sample-metadata.tsv
+
+8 directories, 63 files

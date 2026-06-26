@@ -77,8 +77,10 @@ process_radtags \
 # 87.7% retained reads → Bear_Paw_1.fq, Bear_Paw_2.fq ... Rabbit_Slough_8.fq
 
 # Ver reads por amostra
-rm
-
+for f in 2_demux/*.fq.gz; do
+    n=$(zcat "$f" | wc -l)
+    echo "$(basename) $f .fq.gz): $((n/4)) reads"
+done
 # -----------------------------------------------------------------------------
 # MÓDULO 3 — CONTROLE DE QUALIDADE
 # -----------------------------------------------------------------------------

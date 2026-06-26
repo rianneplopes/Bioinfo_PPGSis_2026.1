@@ -1,0 +1,3 @@
+Sample	fastqc-percent_duplicates	fastqc-percent_gc	fastqc-avg_sequence_length	fastqc-median_sequence_length	fastqc-percent_fails	fastqc-total_sequences
+Bear_Paw_6	66.94813941573331	53.0	32.0	32	30.0	0.689785
+Rabbit_Slough_5	78.29231427929949	52.0	32.0	32	30.0	1.257021

@@ -1,3 +1,0 @@
-barcodes.fastq.gz
-forward.fastq.gz
-reverse.fastq.gz

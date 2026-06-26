@@ -1,0 +1,3 @@
+Sample	Unique Reads	Duplicate Reads
+Bear_Paw_6	227987.0	461798.0
+Rabbit_Slough_5	272871.0	984150.0
