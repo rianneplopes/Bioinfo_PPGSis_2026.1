@@ -4,3 +4,5 @@
 *.qza
 *.fastq.gz
 *.qza
+*.fq
+*.fastq
