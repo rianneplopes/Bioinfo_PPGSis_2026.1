@@ -1,0 +1,739 @@
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 4 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030421_0_L001_R1_001.fastq.gz -p /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030421_8_L001_R2_001.fastq.gz --front GTCGGTAAAACTCGTGCCAGC -G CATAGTGGGGTATCTAATCCCAGTTTG --match-read-wildcards /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030421_0_L001_R1_001.fastq.gz /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030421_8_L001_R2_001.fastq.gz
+Processing paired-end reads on 4 cores ...
+Finished in 1.511 s (11.143 µs/read; 5.38 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            135,622
+  Read 1 with adapter:                 133,957 (98.8%)
+  Read 2 with adapter:                 134,855 (99.4%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       135,622 (100.0%)
+
+Total basepairs processed:    40,505,782 bp
+  Read 1:    20,253,929 bp
+  Read 2:    20,251,853 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):     32,452,675 bp (80.1%)
+  Read 1:    16,644,047 bp
+  Read 2:    15,808,628 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTCGGTAAAACTCGTGCCAGC; Type: regular 5'; Length: 21; Trimmed: 133957 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	20	2119.1	0	20
+4	6	529.8	0	6
+5	1	132.4	0	1
+9	1	0.5	0	1
+15	1	0.0	1	0 1
+16	1	0.0	1	0 1
+18	3	0.0	1	0 3
+19	2	0.0	1	1 1
+20	3	0.0	2	0 1 2
+21	882	0.0	2	882
+22	6	0.0	2	0 4 2
+23	17	0.0	2	9 2 6
+24	15	0.0	2	6 1 8
+25	344	0.0	2	15 8 321
+26	525	0.0	2	211 178 136
+27	131708	0.0	2	66424 1238 64046
+28	418	0.0	2	165 120 133
+29	1	0.0	2	0 0 1
+30	1	0.0	2	1
+33	1	0.0	2	1
+34	1	0.0	2	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: CATAGTGGGGTATCTAATCCCAGTTTG; Type: regular 5'; Length: 27; Trimmed: 134855 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-27 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	40	2119.1	0	40
+4	6	529.8	0	6
+5	1	132.4	0	1
+21	4	0.0	2	3 0 1
+22	3	0.0	2	1 1 1
+23	1	0.0	2	0 1
+24	3	0.0	2	0 2 1
+26	3	0.0	2	0 2 1
+27	868	0.0	2	863 2 3
+28	5	0.0	2	1 2 2
+29	6	0.0	2	0 2 4
+30	7	0.0	2	4 2 1
+31	61	0.0	2	13 24 24
+32	731	0.0	2	102 413 216
+33	132472	0.0	2	43182 88132 1158
+34	641	0.0	2	109 257 275
+35	2	0.0	2	0 1 1
+70	1	0.0	2	0 1
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 4 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030422_1_L001_R1_001.fastq.gz -p /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030422_9_L001_R2_001.fastq.gz --front GTCGGTAAAACTCGTGCCAGC -G CATAGTGGGGTATCTAATCCCAGTTTG --match-read-wildcards /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030422_1_L001_R1_001.fastq.gz /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030422_9_L001_R2_001.fastq.gz
+Processing paired-end reads on 4 cores ...
+Finished in 1.224 s (17.124 µs/read; 3.50 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:             71,482
+  Read 1 with adapter:                  70,218 (98.2%)
+  Read 2 with adapter:                  70,949 (99.3%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):        71,482 (100.0%)
+
+Total basepairs processed:    20,423,181 bp
+  Read 1:    10,210,649 bp
+  Read 2:    10,212,532 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):     16,202,604 bp (79.3%)
+  Read 1:     8,323,344 bp
+  Read 2:     7,879,260 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTCGGTAAAACTCGTGCCAGC; Type: regular 5'; Length: 21; Trimmed: 70218 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	11	1116.9	0	11
+4	6	279.2	0	6
+5	1	69.8	0	1
+12	1	0.0	1	1
+14	2	0.0	1	2
+18	1	0.0	1	0 1
+20	1	0.0	2	0 0 1
+21	1216	0.0	2	1214 0 2
+22	3	0.0	2	0 1 2
+23	3	0.0	2	2 1
+24	10	0.0	2	6 1 3
+25	333	0.0	2	5 3 325
+26	278	0.0	2	104 103 71
+27	68156	0.0	2	34696 747 32713
+28	195	0.0	2	73 48 74
+29	1	0.0	2	0 0 1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: CATAGTGGGGTATCTAATCCCAGTTTG; Type: regular 5'; Length: 27; Trimmed: 70949 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-27 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	21	1116.9	0	21
+4	3	279.2	0	3
+5	2	69.8	0	2
+16	1	0.0	1	1
+25	3	0.0	2	0 2 1
+26	3	0.0	2	0 1 2
+27	1181	0.0	2	1181
+28	4	0.0	2	1 2 1
+29	2	0.0	2	1 1
+30	11	0.0	2	3 5 3
+31	22	0.0	2	6 8 8
+32	395	0.0	2	52 240 103
+33	68969	0.0	2	21422 46930 617
+34	327	0.0	2	41 139 147
+35	4	0.0	2	0 2 2
+74	1	0.0	2	0 0 1
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 4 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030423_2_L001_R1_001.fastq.gz -p /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030423_10_L001_R2_001.fastq.gz --front GTCGGTAAAACTCGTGCCAGC -G CATAGTGGGGTATCTAATCCCAGTTTG --match-read-wildcards /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030423_2_L001_R1_001.fastq.gz /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030423_10_L001_R2_001.fastq.gz
+Processing paired-end reads on 4 cores ...
+Finished in 2.013 s (11.815 µs/read; 5.08 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            170,381
+  Read 1 with adapter:                 167,985 (98.6%)
+  Read 2 with adapter:                 169,386 (99.4%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       170,381 (100.0%)
+
+Total basepairs processed:    50,822,017 bp
+  Read 1:    25,419,572 bp
+  Read 2:    25,402,445 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):     40,708,134 bp (80.1%)
+  Read 1:    20,890,222 bp
+  Read 2:    19,817,912 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTCGGTAAAACTCGTGCCAGC; Type: regular 5'; Length: 21; Trimmed: 167985 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	28	2662.2	0	28
+4	7	665.6	0	7
+5	3	166.4	0	3
+9	1	0.6	0	1
+12	1	0.0	1	1
+15	2	0.0	1	0 2
+16	2	0.0	1	1 1
+18	3	0.0	1	1 2
+19	3	0.0	1	1 2
+20	1	0.0	2	0 0 1
+21	636	0.0	2	633 1 2
+22	5	0.0	2	4 1
+23	14	0.0	2	10 3 1
+24	17	0.0	2	6 2 9
+25	583	0.0	2	16 9 558
+26	697	0.0	2	253 254 190
+27	165446	0.0	2	82460 1624 81362
+28	527	0.0	2	217 142 168
+29	3	0.0	2	0 0 3
+30	1	0.0	2	1
+32	1	0.0	2	0 0 1
+39	1	0.0	2	1
+40	1	0.0	2	0 1
+45	2	0.0	2	1 1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: CATAGTGGGGTATCTAATCCCAGTTTG; Type: regular 5'; Length: 27; Trimmed: 169386 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-27 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	27	2662.2	0	27
+4	3	665.6	0	3
+5	1	166.4	0	1
+7	1	10.4	0	1
+14	1	0.0	1	0 1
+20	1	0.0	2	0 1
+21	3	0.0	2	0 2 1
+22	2	0.0	2	1 1
+23	1	0.0	2	0 0 1
+24	1	0.0	2	0 1
+25	1	0.0	2	0 0 1
+26	3	0.0	2	0 2 1
+27	635	0.0	2	632 2 1
+28	7	0.0	2	2 3 2
+29	9	0.0	2	1 4 4
+30	26	0.0	2	8 11 7
+31	65	0.0	2	15 30 20
+32	964	0.0	2	152 502 310
+33	166811	0.0	2	57406 107904 1501
+34	818	0.0	2	149 346 323
+35	2	0.0	2	0 1 1
+36	1	0.0	2	0 0 1
+63	1	0.0	2	0 1
+74	2	0.0	2	0 1 1
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 4 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030424_3_L001_R1_001.fastq.gz -p /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030424_11_L001_R2_001.fastq.gz --front GTCGGTAAAACTCGTGCCAGC -G CATAGTGGGGTATCTAATCCCAGTTTG --match-read-wildcards /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030424_3_L001_R1_001.fastq.gz /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030424_11_L001_R2_001.fastq.gz
+Processing paired-end reads on 4 cores ...
+Finished in 0.984 s (15.775 µs/read; 3.80 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:             62,352
+  Read 1 with adapter:                  60,142 (96.5%)
+  Read 2 with adapter:                  61,926 (99.3%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):        62,352 (100.0%)
+
+Total basepairs processed:    17,518,768 bp
+  Read 1:     8,761,526 bp
+  Read 2:     8,757,242 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):     13,863,074 bp (79.1%)
+  Read 1:     7,144,433 bp
+  Read 2:     6,718,641 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTCGGTAAAACTCGTGCCAGC; Type: regular 5'; Length: 21; Trimmed: 60142 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	21	974.2	0	21
+4	4	243.6	0	4
+16	1	0.0	1	1
+17	1	0.0	1	0 1
+18	1	0.0	1	0 1
+19	4	0.0	1	3 1
+20	1	0.0	2	1
+21	720	0.0	2	718 1 1
+22	2	0.0	2	1 1
+23	3	0.0	2	1 0 2
+24	12	0.0	2	7 2 3
+25	843	0.0	2	4 1 838
+26	222	0.0	2	82 82 58
+27	58104	0.0	2	29256 608 28240
+28	201	0.0	2	77 41 83
+29	1	0.0	2	1
+34	1	0.0	2	0 1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: CATAGTGGGGTATCTAATCCCAGTTTG; Type: regular 5'; Length: 27; Trimmed: 61926 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-27 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	9	974.2	0	9
+4	3	243.6	0	3
+6	1	15.2	0	1
+7	2	3.8	0	2
+23	1	0.0	2	0 0 1
+24	2	0.0	2	0 2
+25	2	0.0	2	1 0 1
+26	3	0.0	2	0 2 1
+27	734	0.0	2	729 2 3
+28	2	0.0	2	1 1
+29	2	0.0	2	2
+30	1	0.0	2	0 1
+31	23	0.0	2	5 8 10
+32	358	0.0	2	53 178 127
+33	60493	0.0	2	19416 40499 578
+34	285	0.0	2	41 106 138
+35	1	0.0	2	0 1
+36	2	0.0	2	1 1
+72	1	0.0	2	1
+74	1	0.0	2	0 1
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 4 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030425_4_L001_R1_001.fastq.gz -p /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030425_12_L001_R2_001.fastq.gz --front GTCGGTAAAACTCGTGCCAGC -G CATAGTGGGGTATCTAATCCCAGTTTG --match-read-wildcards /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030425_4_L001_R1_001.fastq.gz /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030425_12_L001_R2_001.fastq.gz
+Processing paired-end reads on 4 cores ...
+Finished in 3.735 s (12.147 µs/read; 4.94 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            307,452
+  Read 1 with adapter:                 304,121 (98.9%)
+  Read 2 with adapter:                 305,687 (99.4%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       307,452 (100.0%)
+
+Total basepairs processed:    91,710,172 bp
+  Read 1:    45,884,526 bp
+  Read 2:    45,825,646 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):     73,421,942 bp (80.1%)
+  Read 1:    37,679,398 bp
+  Read 2:    35,742,544 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTCGGTAAAACTCGTGCCAGC; Type: regular 5'; Length: 21; Trimmed: 304121 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	30	4803.9	0	30
+4	13	1201.0	0	13
+5	1	300.2	0	1
+12	1	0.0	1	1
+13	1	0.0	1	0 1
+14	1	0.0	1	0 1
+15	3	0.0	1	1 2
+16	2	0.0	1	1 1
+17	2	0.0	1	1 1
+18	4	0.0	1	3 1
+19	1	0.0	1	0 1
+20	4	0.0	2	1 1 2
+21	395	0.0	2	390 1 4
+22	14	0.0	2	4 2 8
+23	13	0.0	2	5 3 5
+24	41	0.0	2	14 6 21
+25	1054	0.0	2	37 11 1006
+26	1202	0.0	2	443 488 271
+27	300365	0.0	2	162811 3666 133888
+28	959	0.0	2	443 220 296
+29	7	0.0	2	3 1 3
+30	2	0.0	2	1 0 1
+31	4	0.0	2	3 0 1
+33	1	0.0	2	1
+45	1	0.0	2	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: CATAGTGGGGTATCTAATCCCAGTTTG; Type: regular 5'; Length: 27; Trimmed: 305687 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-27 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	35	4803.9	0	35
+4	9	1201.0	0	9
+5	2	300.2	0	2
+6	2	75.1	0	2
+17	1	0.0	1	0 1
+18	1	0.0	1	1
+19	1	0.0	1	0 1
+20	3	0.0	2	0 2 1
+21	1	0.0	2	1
+22	4	0.0	2	1 1 2
+23	2	0.0	2	1 1
+24	4	0.0	2	1 2 1
+25	3	0.0	2	2 0 1
+26	7	0.0	2	1 3 3
+27	365	0.0	2	359 1 5
+28	11	0.0	2	3 6 2
+29	20	0.0	2	4 13 3
+30	36	0.0	2	14 16 6
+31	115	0.0	2	29 45 41
+32	1540	0.0	2	267 876 397
+33	302222	0.0	2	109846 189881 2495
+34	1291	0.0	2	268 511 512
+35	7	0.0	2	1 3 3
+36	3	0.0	2	0 3
+38	2	0.0	2	1 1
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 4 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030426_5_L001_R1_001.fastq.gz -p /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030426_13_L001_R2_001.fastq.gz --front GTCGGTAAAACTCGTGCCAGC -G CATAGTGGGGTATCTAATCCCAGTTTG --match-read-wildcards /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030426_5_L001_R1_001.fastq.gz /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030426_13_L001_R2_001.fastq.gz
+Processing paired-end reads on 4 cores ...
+Finished in 9.037 s (9.330 µs/read; 6.43 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            968,579
+  Read 1 with adapter:                 954,047 (98.5%)
+  Read 2 with adapter:                 962,913 (99.4%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       968,579 (100.0%)
+
+Total basepairs processed:   284,074,602 bp
+  Read 1:   142,106,932 bp
+  Read 2:   141,967,670 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    226,595,884 bp (79.8%)
+  Read 1:   116,380,571 bp
+  Read 2:   110,215,313 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTCGGTAAAACTCGTGCCAGC; Type: regular 5'; Length: 21; Trimmed: 954047 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	185	15134.0	0	185
+4	37	3783.5	0	37
+5	6	945.9	0	6
+6	1	236.5	0	1
+9	3	3.7	0	3
+11	1	0.2	1	1
+12	4	0.1	1	3 1
+13	2	0.0	1	2
+14	3	0.0	1	0 3
+15	8	0.0	1	6 2
+16	6	0.0	1	2 4
+17	7	0.0	1	4 3
+18	11	0.0	1	5 6
+19	8	0.0	1	3 5
+20	12	0.0	2	2 4 6
+21	2640	0.0	2	2626 4 10
+22	31	0.0	2	16 4 11
+23	52	0.0	2	21 8 23
+24	105	0.0	2	57 13 35
+25	4840	0.0	2	140 52 4648
+26	3836	0.0	2	1507 1471 858
+27	939095	0.0	2	525356 12572 401167
+28	3122	0.0	2	1428 832 862
+29	19	0.0	2	5 6 8
+30	5	0.0	2	3 0 2
+31	3	0.0	2	0 0 3
+32	1	0.0	2	1
+35	1	0.0	2	1
+37	1	0.0	2	1
+45	2	0.0	2	2
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: CATAGTGGGGTATCTAATCCCAGTTTG; Type: regular 5'; Length: 27; Trimmed: 962913 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-27 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	120	15134.0	0	120
+4	30	3783.5	0	30
+5	4	945.9	0	4
+6	16	236.5	0	16
+7	1	59.1	0	1
+12	2	0.1	1	1 1
+15	1	0.0	1	1
+16	1	0.0	1	0 1
+19	3	0.0	1	3
+20	7	0.0	2	3 2 2
+21	11	0.0	2	2 4 5
+22	9	0.0	2	1 5 3
+23	9	0.0	2	0 5 4
+24	21	0.0	2	5 8 8
+25	16	0.0	2	1 11 4
+26	22	0.0	2	3 9 10
+27	2612	0.0	2	2589 10 13
+28	28	0.0	2	4 10 14
+29	70	0.0	2	16 34 20
+30	100	0.0	2	25 58 17
+31	355	0.0	2	88 154 113
+32	5070	0.0	2	854 2907 1309
+33	950156	0.0	2	336982 605327 7847
+34	4215	0.0	2	785 1691 1739
+35	25	0.0	2	7 13 5
+36	1	0.0	2	1
+37	2	0.0	2	0 1 1
+38	2	0.0	2	2
+70	2	0.0	2	0 0 2
+74	2	0.0	2	0 0 2
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 4 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030427_6_L001_R1_001.fastq.gz -p /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030427_14_L001_R2_001.fastq.gz --front GTCGGTAAAACTCGTGCCAGC -G CATAGTGGGGTATCTAATCCCAGTTTG --match-read-wildcards /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030427_6_L001_R1_001.fastq.gz /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030427_14_L001_R2_001.fastq.gz
+Processing paired-end reads on 4 cores ...
+Finished in 1.132 s (14.609 µs/read; 4.11 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:             77,466
+  Read 1 with adapter:                  75,001 (96.8%)
+  Read 2 with adapter:                  76,660 (99.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):        77,466 (100.0%)
+
+Total basepairs processed:    22,098,744 bp
+  Read 1:    11,059,673 bp
+  Read 2:    11,039,071 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):     17,552,595 bp (79.4%)
+  Read 1:     9,039,902 bp
+  Read 2:     8,512,693 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTCGGTAAAACTCGTGCCAGC; Type: regular 5'; Length: 21; Trimmed: 75001 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	20	1210.4	0	20
+4	7	302.6	0	7
+5	2	75.7	0	2
+6	1	18.9	0	1
+9	1	0.3	0	1
+12	1	0.0	1	1
+14	1	0.0	1	0 1
+19	1	0.0	1	1
+20	1	0.0	2	0 1
+21	311	0.0	2	309 1 1
+22	1	0.0	2	1
+23	3	0.0	2	1 0 2
+24	16	0.0	2	5 5 6
+25	1256	0.0	2	13 3 1240
+26	288	0.0	2	110 91 87
+27	72854	0.0	2	37753 683 34418
+28	233	0.0	2	89 64 80
+29	3	0.0	2	1 1 1
+30	1	0.0	2	0 0 1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: CATAGTGGGGTATCTAATCCCAGTTTG; Type: regular 5'; Length: 27; Trimmed: 76660 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-27 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	23	1210.4	0	23
+4	9	302.6	0	9
+5	2	75.7	0	2
+20	1	0.0	2	0 1
+22	1	0.0	2	0 1
+23	4	0.0	2	0 1 3
+24	3	0.0	2	1 2
+25	1	0.0	2	0 1
+26	2	0.0	2	0 2
+27	343	0.0	2	341 1 1
+28	4	0.0	2	1 3
+29	3	0.0	2	1 2
+30	10	0.0	2	3 4 3
+31	32	0.0	2	8 12 12
+32	456	0.0	2	99 248 109
+33	75411	0.0	2	31867 42746 798
+34	352	0.0	2	72 145 135
+35	3	0.0	2	2 0 1
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 4 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030428_7_L001_R1_001.fastq.gz -p /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030428_15_L001_R2_001.fastq.gz --front GTCGGTAAAACTCGTGCCAGC -G CATAGTGGGGTATCTAATCCCAGTTTG --match-read-wildcards /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030428_7_L001_R1_001.fastq.gz /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030428_15_L001_R2_001.fastq.gz
+Processing paired-end reads on 4 cores ...
+Finished in 1.547 s (22.635 µs/read; 2.65 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:             68,336
+  Read 1 with adapter:                  66,117 (96.8%)
+  Read 2 with adapter:                  67,591 (98.9%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):        68,336 (100.0%)
+
+Total basepairs processed:    17,121,410 bp
+  Read 1:     8,565,936 bp
+  Read 2:     8,555,474 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):     13,116,960 bp (76.6%)
+  Read 1:     6,787,633 bp
+  Read 2:     6,329,327 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GTCGGTAAAACTCGTGCCAGC; Type: regular 5'; Length: 21; Trimmed: 66117 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	25	1067.8	0	25
+4	8	266.9	0	8
+5	1	66.7	0	1
+6	1	16.7	0	1
+15	3	0.0	1	1 2
+18	1	0.0	1	0 1
+21	495	0.0	2	493 1 1
+23	5	0.0	2	1 0 4
+24	11	0.0	2	2 1 8
+25	1476	0.0	2	17 2 1457
+26	240	0.0	2	89 83 68
+27	63642	0.0	2	32741 613 30288
+28	203	0.0	2	83 51 69
+29	5	0.0	2	3 1 1
+45	1	0.0	2	1
+
+
+=== Second read: Adapter 2 ===
+
+Sequence: CATAGTGGGGTATCTAATCCCAGTTTG; Type: regular 5'; Length: 27; Trimmed: 67591 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-27 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	18	1067.8	0	18
+4	6	266.9	0	6
+5	3	66.7	0	3
+12	2	0.0	1	2
+18	1	0.0	1	1
+21	1	0.0	2	0 0 1
+23	2	0.0	2	0 2
+24	2	0.0	2	1 0 1
+26	1	0.0	2	0 0 1
+27	547	0.0	2	547
+28	4	0.0	2	2 1 1
+29	7	0.0	2	0 5 2
+30	3	0.0	2	1 1 1
+31	27	0.0	2	11 6 10
+32	349	0.0	2	70 184 95
+33	66321	0.0	2	27133 38448 740
+34	296	0.0	2	68 117 111
+35	1	0.0	2	0 0 1
+Running external command line application. This may print messages to stdout and/or stderr.
+The commands to be run are below. These commands cannot be manually re-run as they will depend on temporary files that no longer exist.
+
+Command: cutadapt --cores 4 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030421_0_L001_R1_001.fastq.gz -p /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030421_8_L001_R2_001.fastq.gz --front GTCGGTAAAACTCGTGCCAGC -G CATAGTGGGGTATCTAATCCCAGTTTG --match-read-wildcards /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030421_0_L001_R1_001.fastq.gz /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030421_8_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 4 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030422_1_L001_R1_001.fastq.gz -p /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030422_9_L001_R2_001.fastq.gz --front GTCGGTAAAACTCGTGCCAGC -G CATAGTGGGGTATCTAATCCCAGTTTG --match-read-wildcards /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030422_1_L001_R1_001.fastq.gz /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030422_9_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 4 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030423_2_L001_R1_001.fastq.gz -p /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030423_10_L001_R2_001.fastq.gz --front GTCGGTAAAACTCGTGCCAGC -G CATAGTGGGGTATCTAATCCCAGTTTG --match-read-wildcards /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030423_2_L001_R1_001.fastq.gz /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030423_10_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 4 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030424_3_L001_R1_001.fastq.gz -p /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030424_11_L001_R2_001.fastq.gz --front GTCGGTAAAACTCGTGCCAGC -G CATAGTGGGGTATCTAATCCCAGTTTG --match-read-wildcards /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030424_3_L001_R1_001.fastq.gz /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030424_11_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 4 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030425_4_L001_R1_001.fastq.gz -p /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030425_12_L001_R2_001.fastq.gz --front GTCGGTAAAACTCGTGCCAGC -G CATAGTGGGGTATCTAATCCCAGTTTG --match-read-wildcards /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030425_4_L001_R1_001.fastq.gz /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030425_12_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 4 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030426_5_L001_R1_001.fastq.gz -p /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030426_13_L001_R2_001.fastq.gz --front GTCGGTAAAACTCGTGCCAGC -G CATAGTGGGGTATCTAATCCCAGTTTG --match-read-wildcards /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030426_5_L001_R1_001.fastq.gz /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030426_13_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 4 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030427_6_L001_R1_001.fastq.gz -p /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030427_14_L001_R2_001.fastq.gz --front GTCGGTAAAACTCGTGCCAGC -G CATAGTGGGGTATCTAATCCCAGTTTG --match-read-wildcards /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030427_6_L001_R1_001.fastq.gz /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030427_14_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 4 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030428_7_L001_R1_001.fastq.gz -p /tmp/qiime2/vscode/processes/15939-1782861264.95@vscode/tmp/q2-OutPath-zq73g8_o/DRR030428_15_L001_R2_001.fastq.gz --front GTCGGTAAAACTCGTGCCAGC -G CATAGTGGGGTATCTAATCCCAGTTTG --match-read-wildcards /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030428_7_L001_R1_001.fastq.gz /tmp/qiime2/vscode/data/68392906-84bd-4c8c-8f93-eee857bc9e4a/data/DRR030428_15_L001_R2_001.fastq.gz
+
+Saved SampleData[PairedEndSequencesWithQuality] to: ../4_output/1_qiime_artifacts/demux_trimmed.qza

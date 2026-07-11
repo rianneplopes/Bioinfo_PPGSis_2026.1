@@ -1,0 +1,18 @@
+.
+├── 01_download_ddbj_sra_by_exp.sh
+├── 02_generate_metadata_files.sh
+├── 03_qiime2_import_data.sh
+├── 04_demux_summarize.sh
+├── 05_run_cutadapt.sh
+├── 06_demux_summarize.sh
+├── 07_run_dada2.sh
+├── 08_view_dada2.sh
+├── 09_download_ref_db.sh
+├── 10_train_taxonomy_classifier.sh
+├── 11_run_taxonomy_classifier.sh
+├── 12_view_taxonomy.sh
+├── 13_diversity.sh
+├── 14_export.sh
+└── directory_tree.txt
+
+1 directory, 15 files
