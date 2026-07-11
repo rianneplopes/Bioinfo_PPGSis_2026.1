@@ -1,0 +1,77 @@
+% ==============================================================
+% Baixado de https://github.com/Swepz/latex-templates/tree/main
+% Adaptado por Rianne P. Lopes (https://github.com/rianneplopes)
+% ==============================================================
+
+\documentclass[conference]{IEEEtran}
+% Include all packages from file.
+% Report template for Mälardalen University
+% Original template can be found: 
+% https://www.overleaf.com/latex/templates/ieee-bare-demo-template-for-conferences/ypypvwjmvtdf
+% Template file structure organised by: Emil Persson
+% The following packages should follow the IEEE conference guidelines.
+
+% Language package 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english, portuguese]{babel}
+
+
+% Graphics
+\usepackage{graphicx, float, subfigure, blindtext}
+
+\newcommand\IEEEhyperrefsetup{
+bookmarks=true,bookmarksnumbered=true,%
+colorlinks=true,linkcolor={black},citecolor={black},urlcolor={black}%
+}
+
+% Preferred hyperref setup, Michael Shell
+\usepackage[\IEEEhyperrefsetup, pdftex]{hyperref}
+
+% Maths
+\usepackage{mathtools}
+\newcommand{\cmd}[1]{\texttt{#1}}
+
+% These packages must be at the end
+\usepackage[nolist,nohyperlinks]{acronym}
+\usepackage{cleveref}
+\graphicspath{{images/}}
+
+% Remove section first paragraph indent
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{*1}{*1}
+\titlespacing*{\subsection}{0pt}{*1}{*1}
+\renewcommand{\thesubsubsection}{\arabic{subsubsection}}
+\titleformat{\subsubsection}[runin]{\itshape}{\thesubsubsection)}{1em}{}[:]
+\titlespacing*{\subsubsection}{\parindent}{0pt}{*1}
+
+% Include authors 
+\author{\IEEEauthorblockN{ %
+Rianne Passos Lopes,
+Silionamã Pereira Dantas,
+Maria Cecília Feitoza Gomes
+}
+\IEEEauthorblockA{
+CHS0007 - Tópicos Especiais em Sistemática, Uso e Conservação da Biodiversidade III 2026.1 (Bioinformática) \\
+Programa de Pós-Graduação em Sistemática, Uso e Conservação da Biodiversidade - Universidade Federal do Ceará \\
+}}
+
+% ACRONYMS: \acrodef{acronym}[short name]{full name}
+% \acrodef{svm}[SVM]{Support Vector Machine}
+
+% The report title.
+\title{Diversidade de peixes em eDNA metabarcoding: abordagem comparativa entre ambientes natural e artificial (recife de coral vs. aquário)}
+% Document begins here
+\begin{document}
+% Create the title.
+\maketitle
+% Example sections, name them
+% according to specific needs.
+\input{sections/introduction}
+\input{sections/method}
+\input{sections/results-n-discussion}
+% Select the IEEEtran style
+\bibliographystyle{IEEEtran}
+% Include bibliography file
+\bibliography{IEEEabrv,refs}
+\end{document}

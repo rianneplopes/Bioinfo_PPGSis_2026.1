@@ -1,0 +1,24 @@
+.
+├── 1_raw
+│   ├── DRR030421_1.fastq.gz
+│   ├── DRR030421_2.fastq.gz
+│   ├── DRR030422_1.fastq.gz
+│   ├── DRR030422_2.fastq.gz
+│   ├── DRR030423_1.fastq.gz
+│   ├── DRR030423_2.fastq.gz
+│   ├── DRR030424_1.fastq.gz
+│   ├── DRR030424_2.fastq.gz
+│   ├── DRR030425_1.fastq.gz
+│   ├── DRR030425_2.fastq.gz
+│   ├── DRR030426_1.fastq.gz
+│   ├── DRR030426_2.fastq.gz
+│   ├── DRR030427_1.fastq.gz
+│   ├── DRR030427_2.fastq.gz
+│   ├── DRR030428_1.fastq.gz
+│   └── DRR030428_2.fastq.gz
+├── 2_ref
+│   ├── 12S-seqs-derep-uniq.qza
+│   └── 12S-tax-derep-uniq.qza
+└── directory_tree.txt
+
+3 directories, 19 files

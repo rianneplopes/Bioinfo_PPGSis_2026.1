@@ -1,0 +1,5 @@
+.DS_Store
+*.qza
+*.fastq.gz
+*.html
+

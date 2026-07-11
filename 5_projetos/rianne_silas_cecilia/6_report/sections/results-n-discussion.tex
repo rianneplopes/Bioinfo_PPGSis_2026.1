@@ -1,0 +1,49 @@
+\section{Resultados e Discussão}
+\label{section:results-n-discussion}
+
+As curvas de rarefação demonstraram que as amostras sequenciadas em ambos os ambientes atingiram o platô de saturação antes da profundidade crítica fixada, indicando sucesso na amostragem da comunidade ictiológica. A linha de corte, definida em 45.000 reads, garantiu alta cobertura biológica de ambos os cenários, preservando o equilíbrio do desenho experimental e mitigando vieses de disparidade de sequenciamento (Figura~\ref{fig:curva_rarefacao_asvs}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\columnwidth]{curva_rarefacao_asvs}
+    \caption{Curva de rarefação das amostras após o processamento das sequências. A linha vertical representa o ponto de amostragem adotado (45.000 reads) para normalização.}
+    \label{fig:curva_rarefacao_asvs}
+\end{figure}
+
+Em relação à diversidade alfa, o ambiente do Recife de Bise apresentou uma riqueza mediana de Variantes de Sequência de Amplicons (ASVs) de aproximadamente 80 ASVs, enquanto o ambiente artificial do Aquário Churaumi apresentou uma mediana de aproximadamente 40 ASVs (Figura~\ref{fig:boxplot_riqueza}). As medianas não diferiram entre os ambientes para as amostras analisadas ($H = 2,13$; $p = 0,14$). Os dados do aquário mostraram-se mais homogêneos devido ao ambiente fechado e controlado, enquanto o recife está sujeito a variações por múltiplos fatores ecológicos e físicos observados em ambientes naturais.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\columnwidth]{boxplot_riqueza}
+    \caption{Variabilidade da diversidade alfa para a comunidade ictiológica estimada via metabarcoding de eDNA, dada pela riqueza de Variantes de Sequência de Amplicons (ASVs) observadas.}
+    \label{fig:boxplot_riqueza}
+\end{figure}
+
+Por outro lado, a estrutura de diversidade beta revelou uma separação espacial entre as comunidades ($\text{Pseudo-F} = 1,73$; $p = 0,031$; 999 permutações). A Análise de Coordenadas Principais (PCoA) evidenciou um agrupamento coeso e restrito para as amostras do Recife de Coral, indicando alta homogeneidade e compartilhamento de táxons no ecossistema natural aberto (Figura~\ref{fig:pcoa_jaccard}). Inversamente, o Aquário Churaumi exibiu uma expressiva variação interna ao longo do eixo vertical (PC2), fragmentando-se em dois subgrupos. Essa segregação reflete o isolamento biológico entre os tanques artificiais, onde cada recinto confina composições diferentes de espécies. Esse padrão demonstra que, embora o número absoluto de espécies (alfa) não difira estritamente, a composição das espécies presentes é consideravelmente distinta, com alta turnover taxonômico entre os ambientes.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\columnwidth]{pcoa_jaccard}
+    \caption{Ordenação por Análise de Coordenadas Principais (PCoA) baseada na matriz de distância de Jaccard para a composição de peixes. Os eixos representam a porcentagem de variação total explicada pelos dados.}
+    \label{fig:pcoa_jaccard}
+\end{figure}
+
+O perfil taxonômico por corrida de sequenciamento (Figura~\ref{fig:barplot_taxonomia_n8}) corroborou o padrão de diversidade beta, exibindo consistência entre as réplicas do Recife e forte heterogeneidade entre os tanques do Aquário. No nível de Família, evidenciou-se uma inversão quase total de dominância taxonômica entre os dois ecossistemas (Figura~\ref{fig:barplot_taxonomia}). No ambiente controlado do Aquário, as análises mostraram dominância das famílias Monodactylidae e Gempylidae, refletindo as espécies selecionadas para estocagem biológica nos tanques de exibição. Em contrapartida, essas famílias mostraram-se ausentes no ecossistema natural do Recife de Bise, onde a comunidade foi caracterizada pela dominância de peixes recifais típicos das famílias Belonidae, Blenniidae e Pomacentridae. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\columnwidth]{barplot_taxonomia_n8}
+    \caption{Composição taxonômica relativa e perfil de distribuição de leituras da comunidade de peixes por corrida de sequenciamento ($n = 8$). As abundâncias estão agregadas em nível de Família para as 4 réplicas do Aquário Churaumi e as 4 réplicas do Recife de Bise. Famílias abaixo das 15 mais abundantes foram agrupadas na categoria "Outros".}
+    \label{fig:barplot_taxonomia_n8}
+\end{figure}
+
+Diante dos resultados acima apresentados, podemos concluir que as composições entre os dois ambientes dos quais foram extraídas as amostras (Aquário e Recife de Coral) é distinta em termos de riqueza de espécies. O ambiente de Recife de Coral possui maior riqueza, com aproximadamente o dobro de espécies em relação ao ambiente artificial. Há uma inversão de dominância taxonômica entre os ambientes: as famílias dominantes no ambiente de Aquário (Monodactylidae e Gempylidae) são irrelevantes no ambiente de Recifes de corais (Belonidae, Blenniidae e Pomacentridae).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\columnwidth]{barplot_taxonomia}
+    \caption{Comparação do perfil taxonômico médio da ictiofauna agrupado por tipo de ambiente. As barras empilhadas representam a abundância relativa agregada em nível de Família.}
+    \label{fig:barplot_taxonomia}
+\end{figure}
+
+Essa divergência taxonômica evidencia a sensibilidade do marcador MiFish e a adequação do pipeline no QIIME 2. O método foi capaz de discriminar com precisão a assinatura molecular de uma comunidade artificial e controlada daquela presente em um ecossistema marinho aberto, capturando a substituição quase total das espécies (turnover) entre os ambientes.

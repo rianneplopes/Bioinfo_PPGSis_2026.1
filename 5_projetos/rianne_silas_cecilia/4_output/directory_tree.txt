@@ -1,0 +1,52 @@
+.
+├── 1_qiime_artifacts
+│   ├── 12S-classifier.qza
+│   ├── alpha_rarefaction_report.qzv
+│   ├── core_metrics_diversity
+│   │   ├── bray_curtis_distance_matrix.qza
+│   │   ├── bray_curtis_emperor.qzv
+│   │   ├── bray_curtis_pcoa_results.qza
+│   │   ├── bray_curtis_significance.qzv
+│   │   ├── evenness_vector.qza
+│   │   ├── jaccard_distance_matrix.qza
+│   │   ├── jaccard_emperor.qzv
+│   │   ├── jaccard_pcoa_results.qza
+│   │   ├── jaccard_significance.qzv
+│   │   ├── observed_features_significance.qzv
+│   │   ├── observed_features_vector.qza
+│   │   ├── rarefied_table.qza
+│   │   ├── shannon_significance.qzv
+│   │   └── shannon_vector.qza
+│   ├── demux.qza
+│   ├── demux.qzv
+│   ├── demux_trimmed.qza
+│   ├── demux_trimmed.qzv
+│   ├── denoising_stats.qza
+│   ├── denoising_stats.qzv
+│   ├── rep_seqs.qza
+│   ├── rep_seqs.qzv
+│   ├── table.qza
+│   ├── table.qzv
+│   ├── taxonomy_barplot.qzv
+│   ├── taxonomy.qza
+│   └── taxonomy.qzv
+├── 2_exported_tables
+│   ├── 1_alpha
+│   │   ├── observed_features.tsv
+│   │   ├── rarefc_observed_features.csv
+│   │   ├── rarefc_shannon.csv
+│   │   └── shannon.tsv
+│   ├── 2_beta
+│   │   ├── bray_curtis
+│   │   │   └── bray_curtis_ordination.txt
+│   │   └── jaccard
+│   │       └── jaccard_ordination.txt
+│   └── 3_taxonomy
+│       ├── feature_table.biom
+│       ├── feature_table.tsv
+│       └── taxonomy.tsv
+├── 3_logs
+│   └── cutadapt.log
+└── directory_tree.txt
+
+10 directories, 40 files

@@ -1,0 +1,45 @@
+{
+  "name": "Fish diversity eDNA Metabarcoding",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
+  "postCreateCommand": "bash .devcontainer/setup.sh 2>&1 | tee .devcontainer/setup.log",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "github.vscode-pull-request-github",
+        "shd101wyy.markdown-preview-enhanced",
+        "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+        "mechatroner.rainbow-csv",
+        "hediet.vscode-drawio",
+        "njpwerner.autodocstring"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.fontSize": 14,
+        "editor.fontSize": 14,
+        "python.defaultInterpreterPath": "/home/vscode/miniforge3/envs/qiime2_amplicon/bin/python"
+      }
+    }
+  },
+
+  "forwardPorts": [],
+  "portsAttributes": {},
+
+  "remoteUser": "vscode",
+
+  "mounts": [],
+
+  "hostRequirements": {
+    "cpus": 6,
+    "memory": "16gb",
+    "storage": "32gb"
+  }
+}

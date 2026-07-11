@@ -1,0 +1,10 @@
+sample-id	geo_local	escala_local	data_coleta	latitude	longitude
+#q2:types	categorical	categorical	categorical	numeric	numeric
+DRR030421	Chura	Aquarium	2014-06-03	26.69	127.88
+DRR030422	Chura	Aquarium	2014-06-03	26.69	127.88
+DRR030423	Chura	Aquarium	2014-06-03	26.69	127.88
+DRR030424	Chura	Aquarium	2014-06-03	26.69	127.88
+DRR030425	Bise	Coral_reefs	2014-06-03	26.71	127.88
+DRR030426	Bise	Coral_reefs	2014-06-03	26.71	127.88
+DRR030427	Bise	Coral_reefs	2014-06-03	26.71	127.88
+DRR030428	Bise	Coral_reefs	2014-06-03	26.71	127.88
