@@ -1,6 +1,0 @@
-.
-├── directory_tree.txt
-├── manifest.tsv
-└── sample_metadata.tsv
-
-1 directory, 3 files
